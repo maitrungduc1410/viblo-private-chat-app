@@ -34,7 +34,7 @@ const filteredUsersList = computed(() => {
                 class="rounded-circle user_img">
               <span class="online_icon"></span>
             </div>
-            <div class="user_info">
+            <div class="user_info ms-2">
               <span>{{ user.name }} {{ user.id === $root.user.id ? '(You)' : '' }}</span>
               <span class="badge badge-danger font-12px" v-if="user.new_messages">
                 {{ user.new_messages }}
